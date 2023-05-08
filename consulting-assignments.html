@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta name="description" content="Consulting Assignments" />
+  <title>Consulting Assignments | VMH Case</title>
+
+  <!-- Favicon -->
+  <link href="img/mdb-favicon.ico" rel="icon" type="image/x-icon" />
+
+  <!-- Main css file -->
+  <link href="css/index.min.css" rel="stylesheet" />
+
+  <!-- Alpine JS -->
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+</head>
+
+<body class="antialiased debug-screens">
+
+<!--Navigation-->
+<header class="sticky top-0 bg-white py-5 text-woodland-500 body-font shadow-lg">
+  <nav class="container">
+    <div class="flex flex-wrap justify-between items-center" x-data="{ open: false}">
+      <a href="#main" class="skip-main">Skip to content</a>
+      <a class="flex" href="index.html"><img alt="Evert-Green Consulting logo" class="w-48 2xl:w-64" src="img/evert-green-logo.svg"  width="100%" height="100%" /></a>
+      <div class="hidden lg:justify-between lg:items-center lg:flex">
+        <ul class="flex flex-row">
+          <li>
+            <a class="btn btn-woodland btn-transition py-2 xl:py-3 px-5" href="index.html" aria-label="Read more about Evert-Green Consulting">Evert-Green Consulting</a>
+          </li>
+          <li>
+            <a class="btn btn-matisse-light btn-transition py-2 xl:py-3 px-5 mx-2" href="consulting-assignments.html">Consulting Assignments</a>
+          </li>
+          <li>
+            <a class="btn btn-matisse btn-transition py-2 xl:py-3 px-5" href="valley-memorial.html">Valley Memorial Hospital</a>
+          </li>
+        </ul>
+      </div>
+      <div class="lg:hidden flex items-center">
+        <button id="button" onclick="aria_expanded()" @click="open = !open" class="inline-flex items-center text-white p-2 bg-woodland-500 hover:bg-woodland-400 active:bg-woodland-400 rounded lg:hidden focus:outline-none"
+                type="button">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  fill-rule="evenodd"></path>
+          </svg>
+          <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  fill-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="lg:hidden justify-between items-center w-full" x-show="open" x-transition.duration.500ms>
+        <ul class="flex flex-col mt-4 text-lg font-medium">
+          <li>
+            <a class="block text-center rounded border-b-2 border-white btn-woodland py-2 pr-4 pl-3 text-white lg:bg-transparent lg:text-blue-700" href="index.html" aria-label="Read more about Evert-Green Consulting">Evert-Green Consulting</a>
+          </li>
+          <li>
+            <a class="block text-center rounded border-b-2 border-white btn-matisse-light py-2 pr-4 pl-3 text-white lg:bg-transparent lg:text-blue-700" href="consulting-assignments.html">Consulting Assignments</a>
+          </li>
+          <li>
+            <a class="block text-center rounded border-b-2 border-white btn-matisse py-2 pr-4 pl-3 text-white lg:bg-transparent lg:text-blue-700" href="valley-memorial.html">Valley Memorial Hospital</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<!--/Navigation-->
+
+<div class="container py-24">
+  <section aria-label="Header"><h1 class="sm:px-[10%] text-center uppercase text-woodland-500 sm:text-4xl text-2xl xl:text-5xl mb-4 font-extrabold">Consulting Assignments</h1>
+  </section>
+
+  <!--Main-->
+<main role="main" id="main" tabindex="-1">
+  <section>
+    <div class="flex flex-wrap justify-center md:justify-start mt-[6rem]">
+      <div class="flex flex-col justify-center xl:w-1/4 md:w-1/2 p-4 mb-12">
+        <div class="rounded-t-lg shadow-lg bg-white min-h-full">
+          <a href="chapter1.html">
+            <img alt="Welcome to Evert-Green Consulting" class="rounded-t-lg" src="img/chapter-1.webp" width="100%" height="100%" /></a>
+          <div id="chapter_1" class="px-6 pt-6">
+            <h2 class="text-gray-900 text-xl font-medium mb-2">Chapter 1</h2>
+            <p class="text-gray-700 text-base">Welcome to Evert-Green Consulting</p>
+          </div>
+        </div>
+        <div class="pb-3 pr-6 rounded-b-lg shadow-lg bg-white text-right font-medium text-white">
+          <a id="read_more" class="float-right inline-block px-4 py-2 btn btn-woodland btn-transition font-medium text-xs" href="chapter1.html" aria-labelledby="read_more chapter_1">Read More</a>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center xl:w-1/4 md:w-1/2 p-4 mb-12">
+        <div class="rounded-t-lg shadow-lg bg-white min-h-full">
+          <a href="chapter2.html">
+            <img alt="Getting Acquainted with Valley Memorial Hospital" class="rounded-t-lg" src="img/chapter-2.webp" width="100%" height="100%" /></a>
+          <div id="chapter_2" class="px-6 pt-6">
+            <h2 class="text-gray-900 text-xl font-medium mb-2">Chapter 2</h2>
+            <p class="text-gray-700 text-base">Getting Acquainted with Valley Memorial Hospital</p>
+          </div>
+        </div>
+        <div class="pb-3 px-6 rounded-b-lg shadow-lg bg-white text-right font-medium text-white">
+          <a class="float-right inline-block px-4 py-2 btn btn-woodland btn-transition font-medium text-xs" href="chapter2.html" aria-labelledby="read_more chapter_2">Read More</a>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center xl:w-1/4 md:w-1/2 p-4 mb-12">
+        <div class="rounded-t-lg shadow-lg bg-white min-h-full">
+          <a href="chapter3.html">
+            <img alt="Service Packages and Processes at Valley Memorial Hospital" class="rounded-t-lg" src="img/chapter-3.webp" width="100%" height="100%" /></a>
+          <div id="chapter_3" class="px-6 pt-6">
+            <h2 class="text-gray-900 text-xl font-medium mb-2">Chapter 3</h2>
+            <p class="text-gray-700 text-base">Service Packages and Processes at Valley Memorial Hospital</p>
+          </div>
+        </div>
+        <div class="pb-3 px-6 rounded-b-lg shadow-lg bg-white text-right font-medium text-white">
+          <a class="float-right inline-block px-4 py-2 btn btn-woodland btn-transition font-medium text-xs" href="chapter3.html" aria-labelledby="read_more chapter_3">Read More</a>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center xl:w-1/4 md:w-1/2 p-4 mb-12">
+        <div class="rounded-t-lg shadow-lg bg-white min-h-full">
+          <a href="chapter4.html">
+            <img alt="Supply Chain Management at Valley Memorial Hospital" class="rounded-t-lg" src="img/chapter-4.webp" width="100%" height="100%" /></a>
+          <div id="chapter_4" class="px-6 pt-6">
+            <h2 class="text-gray-900 text-xl font-medium mb-2">Chapter 4</h2>
+            <p class="text-gray-700 text-base">Supply Chain Management at Valley Memorial Hospital</p>
+          </div>
+        </div>
+        <div class="pb-3 px-6 rounded-b-lg shadow-lg bg-white text-right font-medium text-white">
+          <a class="float-right inline-block px-4 py-2 btn btn-woodland btn-transition font-medium text-xs" href="chapter4.html" aria-labelledby="read_more chapter_4">Read More</a>
+        </div>
+      </div>
+
+      <div class="flex flex-col justify-center xl:w-1/4 md:w-1/2 p-4 mb-12">
+        <div class="rounded-t-lg shadow-lg bg-white min-h-full">
+          <a href="chapter5.html">
+            <img alt="Total Quality Management (TQM) at Valley Memorial Hospital" class="rounded-t-lg" src="img/chapter-5.webp" width="100%" height="100%" /></a>
+          <div id="chapter_5" class="px-6 pt-6">
+            <h2 class="text-gray-900 text-xl font-medium mb-2">Chapter 5</h2>
+            <p class="text-gray-700 text-base">Total Quality Management (TQM) at Valley Memorial Hospital</p>
+          </div>
+        </div>
+        <div class="pb-3 px-6 rounded-b-lg shadow-lg bg-white text-right font-medium text-white">
+          <a class="float-right inline-block px-4 py-2 btn btn-woodland btn-transition font-medium text-xs" href="chapter5.html" aria-labelledby="read_more chapter_5">Read More</a>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center xl:w-1/4 md:w-1/2 p-4 mb-12">
+        <div class="rounded-t-lg shadow-lg bg-white min-h-full">
+          <a href="chapter6.html">
+            <img alt="Statistical Process Control at Valley Memorial Hospital" class="rounded-t-lg" src="img/chapter-6.webp" width="100%" height="100%" /></a>
+          <div id="chapter_6" class="px-6 pt-6">
+            <h2 class="text-gray-900 text-xl font-medium mb-2">Chapter 6</h2>
+            <p class="text-gray-700 text-base">Statistical Process Control at Valley Memorial Hospital</p>
+          </div>
+        </div>
+        <div class="pb-3 px-6 rounded-b-lg shadow-lg bg-white text-right font-medium text-white">
+          <a class="float-right inline-block px-4 py-2 btn btn-woodland btn-transition font-medium text-xs" href="chapter6.html" aria-labelledby="read_more chapter_6">Read More</a>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center xl:w-1/4 md:w-1/2 p-4 mb-12">
+        <div class="rounded-t-lg shadow-lg bg-white min-h-full">
+          <a href="chapter7.html">
+            <img alt="Just-In-Time at Valley Memorial Hospital" class="rounded-t-lg" src="img/chapter-7.webp" width="100%" height="100%" /></a>
+          <div id="chapter_7" class="px-6 pt-6">
+            <h2 class="text-gray-900 text-xl font-medium mb-2">Chapter 7</h2>
+            <p class="text-gray-700 text-base">Just-In-Time at Valley Memorial Hospital</p>
+          </div>
+        </div>
+        <div class="pb-3 px-6 rounded-b-lg shadow-lg bg-white text-right font-medium text-white">
+          <a class="float-right inline-block px-4 py-2 btn btn-woodland btn-transition font-medium text-xs" href="chapter7.html" aria-labelledby="read_more chapter_7">Read More</a>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center xl:w-1/4 md:w-1/2 p-4 mb-12">
+        <div class="rounded-t-lg shadow-lg bg-white min-h-full">
+          <a href="chapter8.html">
+            <img alt="Forecasting at Valley Memorial Hospital" class="rounded-t-lg" src="img/chapter-8.webp" width="100%" height="100%" /></a>
+          <div id="chapter_8" class="px-6 pt-6">
+            <h2 class="text-gray-900 text-xl font-medium mb-2">Chapter 8</h2>
+            <p class="text-gray-700 text-base">Forecasting at Valley Memorial Hospital</p>
+          </div>
+        </div>
+        <div class="pb-3 px-6 rounded-b-lg shadow-lg bg-white text-right font-medium text-white">
+          <a class="float-right inline-block px-4 py-2 btn btn-woodland btn-transition font-medium text-xs" href="chapter8.html" aria-labelledby="read_more chapter_8">Read More</a>
+        </div>
+      </div>
+
+      <div class="flex flex-col justify-center xl:w-1/4 md:w-1/2 p-4 mb-12">
+        <div class="rounded-t-lg shadow-lg bg-white min-h-full">
+          <a href="chapter9.html">
+            <img alt="Capacity Analysis at Valley Memorial Hospital" class="rounded-t-lg" src="img/chapter-9.webp" width="100%" height="100%" /></a>
+          <div id="chapter_9" class="px-6 pt-6">
+            <h2 class="text-gray-900 text-xl font-medium mb-2">Chapter 9</h2>
+            <p class="text-gray-700 text-base">Capacity Analysis at Valley Memorial Hospital</p>
+          </div>
+        </div>
+        <div class="pb-3 px-6 rounded-b-lg shadow-lg bg-white text-right font-medium text-white">
+          <a class="float-right inline-block px-4 py-2 btn btn-woodland btn-transition font-medium text-xs" href="chapter9.html" aria-labelledby="read_more chapter_9">Read More</a>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center xl:w-1/4 md:w-1/2 p-4 mb-12">
+        <div class="rounded-t-lg shadow-lg bg-white min-h-full">
+          <a href="chapter10.html">
+            <img alt="Layout Design at Valley Memorial Hospital" class="rounded-t-lg" src="img/chapter-10.webp" width="100%" height="100%" /></a>
+          <div id="chapter_10" class="px-6 pt-6">
+            <h2 class="text-gray-900 text-xl font-medium mb-2">Chapter 10</h2>
+            <p class="text-gray-700 text-base">Layout Design at Valley Memorial Hospital</p>
+          </div>
+        </div>
+        <div class="pb-3 px-6 rounded-b-lg shadow-lg bg-white text-right font-medium text-white">
+          <a class="float-right inline-block px-4 py-2 btn btn-woodland btn-transition font-medium text-xs" href="chapter10.html" aria-labelledby="read_more chapter_10">Read More</a>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center xl:w-1/4 md:w-1/2 p-4 mb-12">
+        <div class="rounded-t-lg shadow-lg bg-white min-h-full">
+          <a href="chapter11.html">
+            <img alt="Work System Design at Valley Memorial Hospital" class="rounded-t-lg" src="img/chapter-11.webp" width="100%" height="100%" /></a>
+          <div id="chapter_11" class="px-6 pt-6">
+            <h2 class="text-gray-900 text-xl font-medium mb-2">Chapter 11</h2>
+            <p class="text-gray-700 text-base">Work System Design at Valley Memorial Hospital</p>
+          </div>
+        </div>
+        <div class="pb-3 px-6 rounded-b-lg shadow-lg bg-white text-right font-medium text-white">
+          <a class="float-right inline-block px-4 py-2 btn btn-woodland btn-transition font-medium text-xs" href="chapter11.html" aria-labelledby="read_more chapter_11">Read More</a>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center xl:w-1/4 md:w-1/2 p-4 mb-12">
+        <div class="rounded-t-lg shadow-lg bg-white min-h-full">
+          <a href="chapter12.html">
+            <img alt="Inventory Management at Valley Memorial Hospital" class="rounded-t-lg" src="img/chapter-12.webp" width="100%" height="100%" /></a>
+          <div id="chapter_12" class="px-6 pt-6">
+            <h2 class="text-gray-900 text-xl font-medium mb-2">Chapter 12</h2>
+            <p class="text-gray-700 text-base">Inventory Management at Valley Memorial Hospital</p>
+          </div>
+        </div>
+        <div class="pb-3 px-6 rounded-b-lg shadow-lg bg-white text-right font-medium text-white">
+          <a class="float-right inline-block px-4 py-2 btn btn-woodland btn-transition font-medium text-xs" href="chapter12.html" aria-labelledby="read_more chapter_12">Read More</a>
+        </div>
+      </div>
+
+      <div class="flex flex-col justify-center xl:w-1/4 md:w-1/2 p-4 mb-12">
+        <div class="rounded-t-lg shadow-lg bg-white min-h-full">
+          <a href="chapter13.html">
+            <img alt="Staff Planning at Valley Memorial Hospital" class="rounded-t-lg" src="img/chapter-13.webp" width="100%" height="100%" /></a>
+          <div id="chapter_13" class="px-6 pt-6">
+            <h2 class="text-gray-900 text-xl font-medium mb-2">Chapter 13</h2>
+            <p class="text-gray-700 text-base">Staff Planning at Valley Memorial Hospital</p>
+          </div>
+        </div>
+        <div class="pb-3 px-6 rounded-b-lg shadow-lg bg-white text-right font-medium text-white">
+          <a class="float-right inline-block px-4 py-2 btn btn-woodland btn-transition font-medium text-xs" href="chapter13.html" aria-labelledby="read_more chapter_13">Read More</a>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center xl:w-1/4 md:w-1/2 p-4 mb-12">
+        <div class="rounded-t-lg shadow-lg bg-white min-h-full">
+          <a href="chapter14.html">
+            <img alt="ERP Systems at Valley Memorial Hospital" class="rounded-t-lg" src="img/chapter-14.webp" width="100%" height="100%" /></a>
+          <div id="chapter_14" class="px-6 pt-6">
+            <h2 class="text-gray-900 text-xl font-medium mb-2">Chapter 14</h2>
+            <p class="text-gray-700 text-base">ERP Systems at Valley Memorial Hospital</p>
+          </div>
+        </div>
+        <div class="pb-3 px-6 rounded-b-lg shadow-lg bg-white text-right font-medium text-white">
+          <a class="float-right inline-block px-4 py-2 btn btn-woodland btn-transition font-medium text-xs" href="chapter14.html" aria-labelledby="read_more chapter_14">Read More</a>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center xl:w-1/4 md:w-1/2 p-4 mb-12">
+        <div class="rounded-t-lg shadow-lg bg-white min-h-full">
+          <a href="chapter15.html">
+            <img alt="Scheduling at Valley Memorial Hospital" class="rounded-t-lg" src="img/chapter-15.webp" width="100%" height="100%" /></a>
+          <div id="chapter_15" class="px-6 pt-6">
+            <h2 class="text-gray-900 text-xl font-medium mb-2">Chapter 15</h2>
+            <p class="text-gray-700 text-base">Scheduling at Valley Memorial Hospital</p>
+          </div>
+        </div>
+        <div class="pb-3 px-6 rounded-b-lg shadow-lg bg-white text-right font-medium text-white">
+          <a class="float-right inline-block px-4 py-2 btn btn-woodland btn-transition font-medium text-xs" href="chapter15.html" aria-labelledby="read_more chapter_15">Read More</a>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center xl:w-1/4 md:w-1/2 p-4 mb-12">
+        <div class="rounded-t-lg shadow-lg bg-white min-h-full">
+          <a href="chapter16.html">
+            <img alt="Project Management at Valley Memorial Hospital" class="rounded-t-lg" src="img/chapter-16.webp" width="100%" height="100%" /></a>
+          <div id="chapter_16" class="px-6 pt-6">
+            <h2 class="text-gray-900 text-xl font-medium mb-2">Chapter 16</h2>
+            <p class="text-gray-700 text-base">Project Management at Valley Memorial Hospital</p>
+          </div>
+        </div>
+        <div class="pb-3 px-6 rounded-b-lg shadow-lg bg-white text-right font-medium text-white">
+          <a class="float-right inline-block px-4 py-2 btn btn-woodland btn-transition font-medium text-xs" href="chapter16.html" aria-labelledby="read_more chapter_16">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+</div>
+
+<!--Footer-->
+<footer class="text-white bg-matisse-900 font-body">
+  <div class="container py-5">
+    <div class="flex flex-wrap flex-col justify-center md:flex-row">
+      <div class="md:w-1/2">
+        <div class="text-center_VM">
+          <a href="valley-memorial.html" class="VM">
+            <img width="100%" height="100%"alt="Valley Memorial Hospital" class="w-[250px] pt-4 mx-auto md:mx-0"src="img/vmh-logo.svg"/></a>
+        </div>
+      </div>
+      <div class="md:w-1/2">
+        <p class="text-center lg:text-left xl:text-left font-normal mt-5 py-4 md:text-justify">
+          Our teams of doctors, nurses, surgeons, and administrators work <br aria-hidden="true" class="hidden sm:flex md:hidden lg:flex" />
+          around the clock to give you and your family the specialized care you need.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container py-4 md:py-12 flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    <div class="flex-grow flex flex-wrap md:text-left text-center">
+      <div class="lg:w-1/4 sm:w-2/4 w-full px-4">
+        <h2 id="InfAandRes" class="border-b-2 border-b-matisse-300 border-white border-opacity-50 uppercase tracking-widest title-font xl:text-lg font-extrabold mb-2 sm:mb-3">Information and <br aria-hidden="true" />Resources</h2>
+        <nav aria-labelledby="InfAandRes" class="text-sm lg:text-md list-none mb-5">
+         <ul class="list-none">
+           <li class="mb-2">
+             <a class="hover:text-matisse-200 hover:transition-all transform duration-1000 transition-colors" href="history.html">
+               History</a>
+           </li>
+           <li class="mb-2">
+             <a class="hover:text-matisse-200 hover:transition-all transform duration-1000 transition-colors" href="vision-mission-and-values.html">
+               Vision, Mission and Values</a>
+           </li>
+           <li>
+             <a class="hover:text-matisse-200 hover:transition-all transform duration-1000 transition-colors" href="smt.html">
+               Senior Management Team</a>
+           </li>
+         </ul>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 sm:w-2/4 w-full px-4">
+        <h2 id="DepAndServ" class="border-b-2 border-b-matisse-300 border-opacity-50 uppercase tracking-widest title-font xl:text-lg font-extrabold mb-2 sm:mb-3">Departments and <br aria-hidden="true" />Services</h2>
+        <nav aria-labelledby="DepAndServ" class="text-sm lg:text-md list-none mb-5">
+          <ul class="list-none">
+            <li class="mb-2">
+              <a class="hover:text-matisse-200 hover:transition-all transform duration-1000 transition-colors" href="nursing-services.html">
+                Nursing Services</a>
+            </li>
+            <li class="mb-2">
+              <a class="hover:text-matisse-200 hover:transition-all transform duration-1000 transition-colors" href="restorative-care.html">
+                Restorative Care</a>
+            </li>
+            <li class="mb-2">
+              <a class="hover:text-matisse-200 hover:transition-all transform duration-1000 transition-colors" href="medical-care.html">
+                Medical/Surgical Care</a>
+            </li>
+            <li class="mb-2">
+              <a class="hover:text-matisse-200 hover:transition-all transform duration-1000 transition-colors" href="omc.html">
+                Obstetrics and Maternity Care</a>
+            </li>
+            <li class="mb-2">
+              <a class="hover:text-matisse-200 hover:transition-all transform duration-1000 transition-colors" href="radiology.html">
+                Radiology</a>
+            </li>
+            <li class="mb-2">
+              <a class="hover:text-matisse-200 hover:transition-all transform duration-1000 transition-colors" href="geriatric-care.html">
+                Geriatric Care</a>
+            </li>
+            <li class="mb-2">
+              <a class="hover:text-matisse-200 hover:transition-all transform duration-1000 transition-colors" href="rehab-and-therapy.html">
+                Rehab and Therapy</a>
+            </li>
+            <li class="mb-2">
+              <a class="hover:text-matisse-200 hover:transition-all transform duration-1000 transition-colors" href="laboratory-services.html">
+                Laboratory Services</a>
+            </li>
+            <li>
+              <a class="hover:text-matisse-200 hover:transition-all transform duration-1000 transition-colors" href="esoc.html">
+                Emergency Services and Outpatient Clinic</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 sm:w-2/4 w-full px-4">
+        <h2 id="HospData" class="border-b-2 border-b-matisse-300 border-opacity-50 uppercase tracking-widest title-font xl:text-lg font-extrabold mb-2 sm:mb-3">Hospital <br aria-hidden="true" />Data</h2>
+        <nav aria-labelledby="HospData" class="text-sm lg:text-md list-none mb-5">
+          <ul class="list-none">
+            <li class="mb-2">
+              <a class="hover:text-matisse-200 hover:transition-all transform duration-1000 transition-colors" href="helicopter-service.html">
+                Helicopter Service</a>
+            </li>
+            <li class="mb-2">
+              <a class="hover:text-matisse-200 hover:transition-all transform duration-1000 transition-colors" href="emergency-services.html">
+                Emergency Services</a>
+            </li>
+            <li class="mb-2">
+              <a class="hover:text-matisse-200 hover:transition-all transform duration-1000 transition-colors" href="human-resources.html">
+                Human Resources</a>
+            </li>
+            <li class="mb-2">
+              <a class="hover:text-matisse-200 hover:transition-all transform duration-1000 transition-colors" href="medical-surgical-department.html">
+                Medical/Surgical Department</a>
+            </li>
+            <li class="mb-2">
+              <a class="hover:text-matisse-200 hover:transition-all transform duration-1000 transition-colors" href="quality-improvement-teams.html">
+                Quality Improvement Teams</a>
+            </li>
+            <li class="mb-2">
+              <a class="hover:text-matisse-200 hover:transition-all transform duration-1000 transition-colors" href="marketing.html">
+                Marketing</a>
+            </li>
+            <li>
+              <a class="hover:text-matisse-200 hover:transition-all transform duration-1000 transition-colors" href="billing-office.html">
+                Billing Office</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 sm:w-2/4 w-full px-4">
+        <h2 id="StaffAndFaculty" class="border-b-2 border-b-matisse-300 border-opacity-50 uppercase tracking-widest title-font xl:text-lg font-extrabold mb-2 sm:mb-3">Staff and <br aria-hidden="true" />Faculty</h2>
+        <nav aria-labelledby="StaffAndFaculty" class="text-sm lg:text-md list-none mb-5">
+          <ul class="list-none">
+            <li class="mb-2">
+              <a class="hover:text-matisse-200 hover:transition-all transform duration-1000 transition-colors" href="nursing.html">
+                Nursing</a>
+            </li>
+            <li>
+              <a class="hover:text-matisse-200 hover:transition-all transform duration-1000 transition-colors" href="volunteers.html">
+                Volunteers</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="container py-5 border-t border-matisse-50 border-opacity-50">
+    <div class="flex flex-wrap">
+      <div class="lg:w-full w-full">
+        <p class="text-sm text-center">
+          <img alt="John Wiley & Sons" class="w-12 -mt-1 inline" src="img/wiley.svg" width="100%" height="100%" />
+          © 2023 John Wiley & Sons - <a class="ml-1" href="#" rel="noopener noreferrer" target="_blank">All Rights Reserved</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--/Footer-->
+<script type="text/javascript">
+	function aria_expanded() {
+		var x = document.getElementById("button").getAttribute("aria-expanded");
+		if (x == "true")
+			{
+				x = "false"
+			} else {
+				x = "true"
+			}
+		document.getElementById("button").setAttribute("aria-expanded", x);
+	}
+</script>
+
+</body>
+
+</html>

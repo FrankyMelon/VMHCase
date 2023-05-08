@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <title>Videoplayer</title>
+
+  <link href="src/video-js.min.css" rel="stylesheet" type="text/css">
+  <link href="src/custom.min.css" rel="stylesheet" type="text/css">
+  
+
+  <script type="text/javascript" src="src/video.min.js"></script>
+  <script type="text/javascript" src="src/plugins.min.js"></script>
+
+  <!-- Set the location of the flash SWF -->
+  <script>
+    videojs.options.playbackRates = [0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2];
+    videojs.options.chapterPause = false;
+    videojs.options.responsive = true;
+    videojs.options.transcript = true;
+    videojs.options.playlist = {
+
+      autoplay: false,
+      loop: true,
+      startIndex: 0,
+      short: false,
+      videos: [
+        {
+          title: "chapter_3",
+          src: [
+            {
+              src: "videos/chapter_3.mp4",
+              type: "video/mp4"
+            }
+            ,{
+              src: "videos/chapter_3.webm",
+              type: "video/webm"
+            }  
+          ],
+          poster: "posters/chapter_3.png",
+          tracks: [
+              {
+                src: "videos/chapter_3_CC.vtt",
+                label: "English",
+                kind: "captions",
+                srclang: "en"
+              },
+          ]
+        },
+      ]
+    }
+  
+  </script>
+
+</head>
+<body>
+<main aria-label="video">
+    <video id="example_video_1" class="video-js vjs-default-skin" playsinline controls preload="none" width="956" height="538"
+          poster="posters/chapter_3.png" 
+        data-setup='{ "html5" : { "nativeTextTracks" : false }, "controlBar" : {"volumePanel" : {"inline" : false}}}'>
+      <source src="videos/chapter_3.mp4" type="video/mp4"/>
+      <source src="videos/chapter_3.webm" type="video/webm"/>
+      <track kind="captions" src="videos/chapter_3_CC.vtt" srclang="en" label="English"/>
+      <p>Your browser does not support HTML5!</p>
+    </video>
+</main>
+
+
+<script type="text/javascript" src="src/custom.min.js"></script>
+</body>
+</html>
